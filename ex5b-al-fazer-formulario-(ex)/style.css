@@ -1,0 +1,18 @@
+.custom-input, .custom-icon{
+    border: solid 1px #20c997;
+    background-color: #20c99730;
+}
+.custom-input::after, .custom-icon:active{
+    background-color: #20c99770;
+}
+h2, label, .custom-input, .custom-icon{
+    color: #20c997;
+}
+label{
+    filter: brightness(0.6);
+}
+form{
+    width: 50vw;
+    height: 80vh;
+    margin: 25vw;
+}
