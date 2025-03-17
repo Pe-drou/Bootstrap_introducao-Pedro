@@ -8,12 +8,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> 
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
+    .custom-form{
+        width: 50vw;
+        min-width: 10px;
+        max-height: 80vh;
+        position: relative;
+        left: 25vw;
+        transform: translatey(20%);
+        padding: 1vh 5vw;
+        background-color: #20c99730;
+        border: 3px solid #10c085;
+        border-radius: 25px;
+    }
     .custom-input, .custom-icon{
         border: solid 1px #20c997;
         background-color: #20c99730;
     }
-    .custom-input::after, .custom-icon:active{
-        background-color: #20c99770;
+    .custom-button, .custom-button:hover, .btn.custom-button:active{
+        background-color: #20c997ee;
+    }
+    .custom-button:hover{
+        filter: brightness(0.95);
+    }
+    .btn.custom-button:active{
+        filter: brightness(0.9);
     }
     h2, label, .custom-input, .custom-icon{
         color: #20c997;
@@ -28,7 +46,7 @@
     </style>
 </head>
 <body>
-    <form action="">
+    <form action="" class="custom-form">
         <h2 class="form-title">Login</h2>
         <label for="email" class="form-label">Email:</label>
         <div class="input-group">
@@ -44,7 +62,7 @@
             </span>
             <input type="password" placeholder="Digite a senha" class="form-control custom-input">
         </div>
-        <div class="d-grid"><button type="submit" class="btn btn-info custom-button mt-3">Enviar</button></div>
+        <div class="d-grid"><button type="submit" class="btn custom-button mt-3">Enviar</button></div>
     </form>
 
 
