@@ -1,10 +1,10 @@
-# Exercício 8: Carousel com Bootstrap
+# Exercício 8: Carrossel com Bootstrap
 
-**Objetivo:** Criar um carousel (slideshow) responsivo utilizando Bootstrap, demonstrando a implementação de um componente de apresentação de imagens com controles de navegação.
+**Objetivo:** Criar um carrossel (slideshow) responsivo utilizando Bootstrap, demonstrando a implementação de um componente de apresentação de imagens com controles de navegação.
 
 ---
 ## Descrição:
-Este exercício demonstra a criação de um carousel Bootstrap, que é um slideshow para apresentação de imagens em sequência. O carousel inclui controles de navegação e transições automáticas entre os slides.
+Este exercício demonstra a criação de um carrossel Bootstrap, que é um slideshow para apresentação de imagens em sequência. O carrossel inclui controles de navegação e transições automáticas entre os slides.
 
 ---
 ## Passo 1: Configuração Inicial
@@ -13,7 +13,7 @@ Este exercício demonstra a criação de um carousel Bootstrap, que é um slides
    - Adicionar JavaScript do Bootstrap no final do body
 2. **Estrutura Base:**
    - Container principal com margem superior
-   - Área definida para o carousel
+   - Área definida para o carrossel
 
 ---
 ## Passo 2: Estrutura do Carousel
@@ -54,7 +54,7 @@ Este exercício demonstra a criação de um carousel Bootstrap, que é um slides
 
 2. **Atributos de Dados:**
    - `data-bs-ride`: Controle de autoplay
-   - `data-bs-target`: Referência ao carousel
+   - `data-bs-target`: Referência ao "carousel"
    - `data-bs-slide`: Direção da navegação
 
 3. **Estrutura de Imagens:**
@@ -64,9 +64,9 @@ Este exercício demonstra a criação de um carousel Bootstrap, que é um slides
 
 ---
 ## Explicação:
-Este exercício demonstra a implementação de um carousel Bootstrap, um componente popular para apresentação de conteúdo visual em sequência.
+Este exercício demonstra a implementação de um carrossel Bootstrap, um componente popular para apresentação de conteúdo visual em sequência.
 
-- **Funcionalidade Automática:** O carousel inicia automaticamente a apresentação dos slides.
+- **Funcionalidade Automática:** O carrossel inicia automaticamente a apresentação dos slides.
 - **Controles Intuitivos:** Oferece navegação através de botões nas laterais.
 - **Responsividade:** Adapta-se automaticamente ao tamanho da tela do dispositivo.
 - **Performance:** Utiliza o sistema de carregamento otimizado do Bootstrap.
