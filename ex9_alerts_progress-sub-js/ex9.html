@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alerts e Progress Bar Bootstrap Interativos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
 
+    <div class="container mt-3">
+        <!-- botãoes para os alerts -->
+        <div class="mb-3">
+           <button type="button" class="btn btn-success me-3" id="showSuccessBtn"><i class="bi bi-check-lg"></i></button>
+           <!-- mostra alerta sucesso -->
+           <button type="button" class="btn btn-danger me-3" id="showErrorBtn"><i class="bi bi-exclamation-lg"></i></button>
+           <!-- mostra alerta erro -->
+           <button type="button" class="btn btn-info me-3" id="showToastBtn"><i class="bi bi-info-lg"></i></button>
+           <!-- mostra alera "toast" -->
+        </div>
+        <div class="alert alert-success alert-dismissible fade" id="successAlert">
+            <p><i class="bi bi-check-lg">Alerta de sucesso!</i></p>
+            <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
+        </div>
+        <!-- alerta de sucesso -->
 
-    <!-- 1ª Digitação (Aqui) -->
-
+        <div class="alert alert-danger alert-dismissable fade" id="errorAlert">
+            <p><i class="bi bi-exclamation-lg">Alerta de erro!</i></p>
+            <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
+        </div>
+        <!-- alertas de erro -->
+         
+        <!-- alerta torrada -->
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     

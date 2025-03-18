@@ -21,16 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
     showSuccessBtn.addEventListener('click', () => {
         errorAlert.classList.remove('show');
         successAlert.classList.add('show');
+        console.log('alerta success ativado')
     });
 
     showErrorBtn.addEventListener('click', () => {
         successAlert.classList.remove('show');
         errorAlert.classList.add('show');
+        console.log('alerta error ativado')
     });
 
     // Função para o Toast
     showToastBtn.addEventListener('click', () => {
         toast.show();
+        console.log('alerta torrada ativado (mmm delicia)')
     });
 
     // Funções para Progress Bar
