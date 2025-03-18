@@ -5,13 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Completo Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
-  
-    <!-- 1ª Digitação (Aqui) -->
 
+    <!-- barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand"><i class="bi bi-bluetooth">Blutuf</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- conteúdo principal -->
+    <div class="container mt-4">
+        <!-- o alert em questão -->
+        <div class="alert alert-info alert-dismissible fade show">
+            O defice blutuf está redy to hell
+            <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
+        </div>
+
+        <div class="row">
+            <!-- Coluna principal -->
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Conteúdo principal</h5>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis laborum, fugit a, quidem labore doloribus, totam praesentium eos magni saepe tempore nemo fuga facilis obcaecati soluta beatae officiis voluptatem!
+                        </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contatoModal">Compre agora!</button>
+                    </div>
+                </div>
+
+                <!-- Grid de produtos -->
+                <div class="row">
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="https://placehold.co/600x400/000000/FFF" alt="produto01" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Produto 01</h5>
+                                <p class="card-text">Descrição do produto 01</p>
+                                <button class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="https://placehold.co/600x400/000000/FFF" alt="produto01" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Produto 02</h5>
+                                <p class="card-text">Descrição do produto 02</p>
+                                <button class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <!-- Form de Newsletter -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Newsletter</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Inscrever</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Links Rápidos -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Links Rápidos</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Sobre Nós</a>
+                            <a href="#" class="list-group-item list-group-item-action">Serviços</a>
+                            <a href="#" class="list-group-item list-group-item-action">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contato -->
+    <div class="modal fade" id="contatoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Entre em Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailContato" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailContato" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

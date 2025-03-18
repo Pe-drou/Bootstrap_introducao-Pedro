@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         progressBar.textContent = newWidth + '%';
     }
 
-    increaseBtn.addEventListener('click', () => updateProgress(10));
-    decreaseBtn.addEventListener('click', () => updateProgress(-10));
+    increaseBtn.addEventListener('click', () => updateProgress(1));
+    decreaseBtn.addEventListener('click', () => updateProgress(-1));
 
     // Toggle animação da progress bar
     toggleAnimationBtn.addEventListener('click', () => {
